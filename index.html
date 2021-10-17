@@ -6,19 +6,33 @@
         <link rel="stylesheet" href="mobile.css">
         <link rel="stylesheet" href="desktop.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leonlit</title>
     </head>
     <body>
-        <section>
-            <div>Leon Lit</div>
-            <p>
-                Love to build things and hack things. 
-            </p>
+        <nav>
+            <div id="title">Leonlit</div>
+            <div id="nav-trigger" onclick="open_nav()">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            <div class="nav_items">
+                <span><a href="#skills">Skills</a></span>
+                <span><a href="#portfolio">Portfolio</a></span>
+                <span><a href="#about">About Me</a></span>
+                <span><a href="#contact">Contact</a></span>
+            </div>
+        </nav>
+        <section class="headerr-section">
+            <div class="slogan">
+                A Programmer and a Hacker.
+            </div>
         </section>
         <hr>
         <section class="skills-section" id="skills">
             <h1>Skills</h1>
             <div class="flex-container">
-                <span class="skills-subsections">
+                <div class="skills-subsections">
                     <h2>Web Developments</h2>
                     <div class="icon-flex-container">
                         <i class="devicon-html5-plain colored"></i>
@@ -28,30 +42,31 @@
                         <i class="devicon-nodejs-plain colored"></i>
                         <i class="devicon-flask-original colored"></i>
                         <i class="devicon-express-original colored"></i>
-                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-socketio-original colored"></i>
                     </div>
-                </span>
-
-                <span class="skills-subsections">
+                </div>
+                <div class="skills-subsections">
                     <h2>Programming & scripting languages</h2>
                     <div class="icon-flex-container">
                         <i class="devicon-bash-plain colored"></i>
                         <i class="devicon-java-plain colored"></i>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="70" height="70"/>
                     </div>
-                </span>
+                </div>
 
-                <span class="skills-subsections">
+                <div class="skills-subsections">
                     <h2>Technologies</h2>
                     <div class="icon-flex-container">
                         <i class="devicon-git-plain colored"></i>
                         <i class="devicon-vscode-plain colored"></i>
                         <i class="devicon-linux-plain colored"></i>
+                        <i class="devicon-electron-original colored"></i>
+
                         <img src="asset/virtualbox.png" width="70" height="70"/>
                     </div>
-                </span>
+                </div>
 
-                <span class="skills-subsections">
+                <div class="skills-subsections">
                     <h2>Security & Reversing Technologies</h2>
                     <div class="icon-flex-container">
                         <img src="asset/ossec.png" width="70" height="70"/>
@@ -59,7 +74,7 @@
                         <img src="asset/ghidra.png" width="70" height="70"/>
                         <img src="asset/radare.png" width="70" height="70"/>
                     </div>
-                </span>
+                </div>
             </div>
         </section>
         <hr>
@@ -129,7 +144,30 @@
             <button><a href="https://github.com/Leonlit" target="_blank">More</a></button>
         </section>
         <hr>
-        <section class="contact-section">
+        <section class="about-section" id="about">
+            <h1>About Me</h1>
+            <p>
+                I can build software, web application and some mobile application. I have experience in building a web application using plain HTML, CSS, and JS. I also have experience in building web 
+                applications using various frameworks such as ExpressJS and Flask. 
+                <br><br>
+                For Backend, I have experience with PHP as well as NodeJS. I also learned to utilise SocketIO to manage communication 
+                between the front end and the server in creating my side projects.
+                <br><br>
+                Besides web applications, I also have experience building desktop applications using frameworks and libraries such as JavaFX and ElectronJS.
+                <br><br>
+                For all my projects, I will use git to keep track of the changes I have made to the code, which prevent me from dealing with accidental mistakes.
+                <br><br>
+                I also have experience using Virtual Machines and the Linux OS. I can use the bash scripting language to automate my tasks in the Linux environment, such as inserting white-listed IPs 
+                into Iptables in bulk.
+                <br><br>
+                Besides doing Web desktop application related projects, I also have experience in the cyber security field. I have set up an IDS such as OSSEC ( a HIDS) on a network compromising a host
+                and a server monitoring the host behaviours and errors.
+                <br><br>
+                On the red teaming side, I'm currently sharpening my craft in TryHackMe to learn Ethical Hacking and how malware works by reading the Practical Malware Analysis book.
+            </p>
+        </section>
+        <hr>
+        <section class="contact-section" id="contact">
             <h1>Social Media</h1>
             <div class="flex-container-row">
                 <a target="_blank" href="https://twitter.com/leonlit"><i class="devicon-twitter-original colored"></i></a>
@@ -137,5 +175,11 @@
                 <a target="_blank" href="https://www.linkedin.com/in/leon-lit-152480142/"><i class="devicon-github-original colored"></i></a>
             </div>
         </section>
+        <hr>
+        <section class="credit-section">
+            <span>Thank you <a target="_blank" href="https://devicon.dev/" style="color: #60be86;">Devicon.dev</a>, for all the icons for development-related technologies. All other logos are the properties of their respective owners.</span>
+        </section>
     </body>
 </html>
+
+<script src="index.js"></script>

@@ -4,7 +4,6 @@
         margin-top: 10vh;
     }
 
-
     section h1 {
         text-align: center;
         font-size: 2em ;
@@ -25,6 +24,7 @@
     .skills-subsections {
         text-align: center;
         max-width: 15vw;
+        margin-left: 0;
     }
 
     .skills-subsections h2 {
