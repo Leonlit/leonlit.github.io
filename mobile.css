@@ -28,18 +28,20 @@ section h1 {
 
 .skills-subsections {
     text-align: center;
-    width: 100%;
+    width: 90%;
+    margin-left:5%;
 }
 
 .skills-subsections h2 {
+    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
 .icon-flex-container {
-    align-items: center;
-    width: 50%;
+    align-content: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 5vh;
 }
