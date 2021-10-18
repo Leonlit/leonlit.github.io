@@ -11,18 +11,18 @@
     <body>
         <nav>
             <div id="title">Leonlit</div>
-            <div id="nav-trigger" onclick="open_nav()">
+            <div id="nav-trigger">
                 <div></div>
                 <div></div>
                 <div></div>
               </div>
-            <div class="nav_items">
-                <span><a href="#skills">Skills</a></span>
-                <span><a href="#portfolio">Portfolio</a></span>
-                <span><a href="#about">About Me</a></span>
-                <span><a href="#contact">Contact</a></span>
-            </div>
         </nav>
+        <div class="nav_items" onclick="close_nav()">
+            <span><a href="#skills">Skills</a></span>
+            <span><a href="#portfolio">Portfolio</a></span>
+            <span><a href="#about">About Me</a></span>
+            <span><a href="#contact">Contact</a></span>
+        </div>
         <section class="headerr-section">
             <div class="slogan">
                 A Programmer and a Hacker.
@@ -71,8 +71,8 @@
                     <div class="icon-flex-container">
                         <img src="asset/ossec.png" width="70" height="70"/>
                         <img src="asset/nmap.png" width="70" height="70"/>
-                        <img src="asset/ghidra.png" width="70" height="70"/>
-                        <img src="asset/radare.png" width="70" height="70"/>
+                        <!-- <img src="asset/ghidra.png" width="70" height="70"/>
+                        <img src="asset/radare.png" width="70" height="70"/> -->
                     </div>
                 </div>
             </div>
@@ -87,6 +87,15 @@
                     <p>
                         A Flask website that shows us the route that our computer need to follow to reach a website
                     </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                        <span>IPInfo</span>
+                        <span>LeafletJS</span>
+                    </div>
                     <div>
                         <button><a target="_blank" href="https://www.youtube.com/watch?v=hHN45rq4lUU">Demo</a></button>
                         <button><a target="_blank" href="https://github.com/Leonlit/route_tracer">Source</a></button>
@@ -99,6 +108,12 @@
                     <p>
                         A JavaFX desktop application for viewing covid-19 data & comparing between countries!
                     </p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>CSS</span>
+                        <span>Maven</span>
+                    </div>
                     <div>
                         <button><a target="_blank">Demo</a></button>
                         <button><a target="_blank" href="https://github.com/Leonlit/Covid-19_viewer">Source</a></button>
@@ -175,7 +190,6 @@
                 <a target="_blank" href="https://www.linkedin.com/in/leon-lit-152480142/"><i class="devicon-github-original colored"></i></a>
             </div>
         </section>
-        <hr>
         <section class="credit-section">
             <span>Thank you <a target="_blank" href="https://devicon.dev/" style="color: #60be86;">Devicon.dev</a>, for all the icons for development-related technologies. All other logos are the properties of their respective owners.</span>
         </section>
