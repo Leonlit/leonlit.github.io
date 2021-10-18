@@ -218,11 +218,16 @@ section h1, section img {
     background-color: rgb(226, 226, 226);
 }
 
-.about-section p {
+.about-section-long p, .about-section-short ul {
+    color: rgb(37, 37, 37);
     width:80%;
     margin-left: 10%;
     line-height: 1.5em;
     letter-spacing: .05em;
+}
+
+.about-section-short ul li {
+    margin-top: 5px;
 }
 
 .contact-section i{
