@@ -4,21 +4,13 @@
         margin-top: 10vh;
     }
 
-    section h1 {
-        text-align: center;
-        font-size: 2em ;
+    .header-section .slogan {
+        font-size: 1.5em;
     }
 
-    .skills-section i{
-        font-size: 3em;
-        margin:10px;
-        margin-top:10px;
-    }
-
-    .flex-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+    .gallery-section .images-container img{
+        width: 70%;
+        margin-left: 15%;
     }
 
     .skills-subsections {
@@ -27,13 +19,47 @@
         margin-left: 0;
     }
 
-    .skills-subsections h2 {
-        margin-bottom: 5vh;
+    .project-card img {
+        width: 40%;
     }
 
-    .icon-flex-container {
+    .project-card{
         display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
     }
+    
+    .portfolio-section{
+        text-align: center;
+    }
+
+    .project-card > div {
+        margin-left: 5%;
+        max-width: 30vw;
+    }
+
+    .project-card > div > div {
+        display: inline-block;
+    }
+
+    .project-card p {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .project-card .project-tags {
+        display: block;
+        width: auto;
+        margin-left: 0;
+    }
+
+    hr {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    section > a > button {
+        margin-top: 10vh;
+    }
+
 }

@@ -10,6 +10,10 @@ body {
     margin-top: 60px;
 }
 
+button {
+    cursor: pointer;
+}
+
 nav {
     width: 100%;
     padding: 0;
@@ -135,7 +139,7 @@ section a:active {
     color: rgb(117, 0, 117);
 }
 
-section > button {
+section > a > button {
     background-color: rgb(117, 0, 117);
     font-size: 1.2em;
     padding: 15px;
@@ -143,10 +147,10 @@ section > button {
     border: none;
 }
 
-section > button > a, 
-section > button > a:visited,
-section > button > a:hover, 
-section > button > a:active {
+section > a > button,
+section > a:visited > button,
+section > a:hover > button,
+section > a:active > button {
     color: white;
 }
 
@@ -250,7 +254,7 @@ section h1, section img {
     margin-right: 10px;
 }
 
-.project-card div {
+.project-card > div > div {
     display: flex;
     align-content: center;
     justify-content: center;

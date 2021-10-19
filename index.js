@@ -4,6 +4,7 @@ const img_id = document.getElementById("gallery_image");
 const imageGalleryController = document.getElementById("image_gallery_controller");
 
 let galleryCount = 0;
+let newPosition = 0;
 let timerHandler;
 const images_src = ["asset/illus_1.png", "asset/illus_2.png", "asset/illus_3.png"]
 
@@ -38,24 +39,16 @@ function generate_img_placement () {
 function img_manual_rotate (event) {
     hide_img_with_animation();
     remove_gallery_timer();
-    const newPosition = event.target.id;;
-    setTimeout(()=>{
-        change_image(newPosition);
-        change_controller(galleryCount, newPosition);
-        galleryCount = newPosition;
-    }, 1000);
+    newPosition = event.target.id;;
+    img_id.addEventListener("animationend", end_of_img_hide, false);
     start_gallery_timer();
 }
 
 function forced_img_rotate () {
     hide_img_with_animation();
     remove_gallery_timer();
-    const newPosition = (galleryCount + 1) % 3;
-    setTimeout(()=>{
-        change_image(newPosition);
-        change_controller(galleryCount, newPosition);
-        galleryCount = newPosition;
-    }, 1000)
+    newPosition = (galleryCount + 1) % 3;
+    img_id.addEventListener("animationend", end_of_img_hide, false);
     start_gallery_timer();
 }
 
@@ -80,12 +73,14 @@ function hide_img_with_animation () {
 
 function rotate_gallery () {
     hide_img_with_animation();
-    const newPosition = (galleryCount + 1) % 3;
-    setTimeout(()=>{
-        change_image(newPosition);
-        change_controller(galleryCount, newPosition);
-        galleryCount = newPosition;
-    }, 1000)
+    newPosition = (galleryCount + 1) % 3;
+    img_id.addEventListener("animationend", end_of_img_hide, false);
+}
+
+function end_of_img_hide () {
+    change_image(newPosition);
+    change_controller(galleryCount, newPosition);
+    galleryCount = newPosition;
 }
 
 function change_image(position_new) {   
