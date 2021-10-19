@@ -61,7 +61,7 @@ function forced_img_rotate () {
 
 function open_nav () {
     const items = document.getElementsByClassName("nav_items")[0];
-    items.style.top = "60px";
+    items.style.top = "59px";
     navTrigger.removeEventListener("click", open_nav, true);
     navTrigger.addEventListener("click", close_nav, true);
 }

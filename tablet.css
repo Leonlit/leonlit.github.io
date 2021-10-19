@@ -1,0 +1,37 @@
+@media only screen and (min-width: 500px) {
+    .header-section .slogan {
+       margin-top: 0;
+    }
+
+    .gallery-section {
+        margin-bottom: 5vh;
+    }
+
+    .skills-section .flex-container {
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 5%;
+    }
+
+    .skills-subsections {
+        max-width: 40%;
+        margin-left: 0;
+    }
+    
+    .project-card {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .project-card img {
+        width: 50%;
+    }
+
+    .project-card p {
+        width: 50%;
+        margin-left: 25%;
+    }
+}

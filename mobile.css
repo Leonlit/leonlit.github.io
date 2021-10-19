@@ -41,7 +41,6 @@ nav #title {
     top:10px;
     left: 30px;
     font-size: 1.5em;
-    
 }
 
 .nav_items span{
@@ -177,13 +176,13 @@ section h1, section img {
     color: rgb(71, 71, 71);
 }
 
-.flex-container-column{
+.skills-section .flex-container, .portfolio-section .flex-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.flex-container-row {
+.contact-section .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
