@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Merriweather;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 nav {
@@ -62,11 +62,28 @@ nav #title {
     transition: 0.3s;
 }
 
+.gallery-section {
+    margin-bottom: 10vh;
+    overflow: hidden;
+}
+
+.gallery-section .images-container {
+    width: 300%;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: 0.3s;
+}
+
+.gallery-section .images-container img{
+    max-width: 100vw;
+    display: inline;
+}
+
 .header-section .slogan {
     text-align: center;
     font-size: 1.2em;
     font-weight: 900;
-    /* color: ; */
+    margin-top: 10vh;
 }
 
 a, a:visited, a:hover, a:active {
