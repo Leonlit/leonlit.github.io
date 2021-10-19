@@ -80,6 +80,9 @@ nav #title {
 
 .gallery-section .images-container img{
     width: 100%;
+}
+
+.img_show {
     animation-name: show_img;
     animation-duration: 1s;
 }
