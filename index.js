@@ -16,7 +16,7 @@ window.onload = function () {
 }
 
 function start_gallery_timer () {
-    timerHandler = setInterval(rotate_gallery, 1000 * 5);
+    timerHandler = setInterval(rotate_gallery, 1000 * 7);
 }
 
 function remove_gallery_timer () {
@@ -60,6 +60,9 @@ function open_nav () {
 }
 
 function close_nav () {
+    if (window.screen.width >= 1024) {
+        return;
+    }
     const items = document.getElementsByClassName("nav_items")[0];
     items.style.top = "-50vh";
     navTrigger.removeEventListener("click", close_nav, true);
