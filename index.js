@@ -56,6 +56,7 @@ function forced_img_rotate () {
         change_controller(galleryCount, newPosition);
         galleryCount = newPosition;
     }, 1000)
+    start_gallery_timer();
 }
 
 function open_nav () {
