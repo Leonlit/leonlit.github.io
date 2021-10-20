@@ -11,8 +11,14 @@ const images_src = ["asset/img/illus_1.png", "asset/img/illus_2.png", "asset/img
 window.onload = function () {
     navTrigger.addEventListener("click", open_nav, true);
     img_id.addEventListener("click", forced_img_rotate);
+    window.addEventListener('resize', fix_nav);
     generate_img_placement();
     start_gallery_timer();
+}
+
+function fix_nav () {
+    const items = document.getElementsByClassName("nav_items")[0];
+    items.removeAttribute("style");
 }
 
 function start_gallery_timer () {
@@ -60,7 +66,7 @@ function open_nav () {
 }
 
 function close_nav () {
-    if (window.screen.width >= 1024) {
+    if (window.innerWidth >= 1024) {
         return;
     }
     const items = document.getElementsByClassName("nav_items")[0];

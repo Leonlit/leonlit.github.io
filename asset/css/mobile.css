@@ -53,6 +53,11 @@ nav #title {
     font-size: 1.2em;
     padding-top:10px;
     padding-bottom:10px;
+    transition: 0.3s;
+}
+
+.nav_items span a:hover {
+    color: yellow;
 }
 
 .nav_items {
@@ -145,6 +150,11 @@ section > a > button {
     padding: 15px;
     border-radius: 20px;
     border: none;
+    transition: 0.3s;
+}
+
+section > a > button:hover {
+    background-color: rgb(94, 0, 94);
 }
 
 section > a > button,
@@ -258,6 +268,15 @@ section h1, section img {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.project-card > div > div > a > button {
+    transition: 0.3s;
+}
+
+.project-card > div > div > a > button:hover {
+    background-color: rgb(117, 0, 117);
+    color: white;
 }
 
 .project-card p {
