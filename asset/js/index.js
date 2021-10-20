@@ -14,6 +14,7 @@ window.onload = function () {
     window.addEventListener('resize', fix_nav);
     generate_img_placement();
     start_gallery_timer();
+    add_position_handler_from_nav();
 }
 
 function fix_nav () {
@@ -56,6 +57,19 @@ function forced_img_rotate () {
     newPosition = (galleryCount + 1) % 3;
     img_id.addEventListener("animationend", end_of_img_hide, false);
     start_gallery_timer();
+}
+
+function add_position_handler_from_nav() {
+    const elements = document.querySelectorAll(".nav_items span a");
+    const hightlist_position = function () {
+        [].map.call(elements, function(ele) {
+            ele.parentNode.classList.remove("active") 
+        });
+        this.parentNode.classList.add("active");
+    };
+    [].map.call(elements, function(ele) {
+        ele.addEventListener("click", hightlist_position, false);
+    });
 }
 
 function open_nav () {
