@@ -6,7 +6,7 @@ const imageGalleryController = document.getElementById("image_gallery_controller
 let galleryCount = 0;
 let newPosition = 0;
 let timerHandler;
-const images_src = ["asset/illus_1.png", "asset/illus_2.png", "asset/illus_3.png"]
+const images_src = ["asset/img/illus_1.png", "asset/img/illus_2.png", "asset/img/illus_3.png"]
 
 window.onload = function () {
     navTrigger.addEventListener("click", open_nav, true);
