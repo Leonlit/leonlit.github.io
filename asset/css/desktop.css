@@ -102,4 +102,8 @@
         margin-left: 20px;
     }
 
+    .project-card .project-tags {
+        margin-bottom: 5vh;
+    }
+
 }

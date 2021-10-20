@@ -312,9 +312,13 @@ section h1, section img {
 .about-section-long p, .about-section-short ul {
     color: rgb(37, 37, 37);
     width:80%;
-    margin-left: 10%;
+    margin-left: 5%;
     line-height: 1.5em;
     letter-spacing: .05em;
+}
+
+.about-section-long p {
+    margin-left: 10%;
 }
 
 .about-section-short ul li {
