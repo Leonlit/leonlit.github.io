@@ -12,9 +12,51 @@ window.onload = function () {
     navTrigger.addEventListener("click", open_nav, true);
     img_id.addEventListener("click", forced_img_rotate);
     window.addEventListener('resize', fix_nav);
+    window.addEventListener('scroll', handle_scrolled);
     generate_img_placement();
     start_gallery_timer();
     add_position_handler_from_nav();
+}
+
+const skills = document.getElementById("skills");
+const portfolio = document.getElementById("portfolio");
+const aboutShort = document.getElementById("about-short");
+const aboutLong = document.getElementById("about-long");
+const contact = document.getElementById("contact");
+
+function handle_scrolled () {
+    const userPosition = window.scrollY;
+    const skillOffset = skills.offsetTop - 60;
+    const portfolioOffset = portfolio.offsetTop - 60;
+    const aboutShortOffset = aboutShort.offsetTop - 60;
+    const aboutLongOffset = aboutLong.offsetTop - 60;
+    const contactOffset = contact.offsetTop - 60;
+    
+    remove_other_highlight();
+
+    if (userPosition > skillOffset && userPosition < portfolioOffset) {
+        document.getElementsByName("skills")[0].classList.add("active");
+    }
+    if (userPosition > portfolioOffset && userPosition < aboutShortOffset) {
+        document.getElementsByName("portfolio")[0].classList.add("active");
+    }
+    if (userPosition > aboutShortOffset && userPosition < aboutLongOffset) {
+        document.getElementsByName("about-short")[0].classList.add("active");
+    }
+    if (userPosition > aboutLongOffset && userPosition < contactOffset) {
+        document.getElementsByName("about-long")[0].classList.add("active");
+    }
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        remove_other_highlight()
+        document.getElementsByName("contact")[0].classList.add("active");
+    }
+}
+
+function remove_other_highlight () {
+    const elements = document.querySelectorAll(".nav_items span");
+    [].map.call(elements, function(ele) {
+        ele.classList.remove("active");
+    });
 }
 
 function fix_nav () {
