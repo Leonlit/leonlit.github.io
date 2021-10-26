@@ -124,6 +124,7 @@ nav #title {
     display: inline;
     background-color: rgb(197, 197, 197);
     margin-left: 10px;
+    transition: 0.3s;
 }
 
 .header-section .slogan {
