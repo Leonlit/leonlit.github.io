@@ -69,8 +69,8 @@
     }
 
     .project-card .project-tags {
-        display: block;
-        width: auto;
+        justify-content: flex-start;
+        align-content: flex-start;
         margin-left: 0;
     }
 
