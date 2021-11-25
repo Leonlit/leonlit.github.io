@@ -116,19 +116,27 @@ function add_position_handler_from_nav() {
 
 function open_nav () {
     const items = document.getElementsByClassName("nav_items")[0];
+    const navBar = document.getElementsByTagName("nav")[0];
     items.style.top = "59px";
+    items.style.boxShadow = "0px 3px 3px rgba(0, 0, 0, 0.486)";
     navTrigger.removeEventListener("click", open_nav, true);
     navTrigger.addEventListener("click", close_nav, true);
+    navBar.style.boxShadow = "none";
 }
 
 function close_nav () {
+    const navBar = document.getElementsByTagName("nav")[0];
     if (window.innerWidth >= 1024) {
         return;
     }
     const items = document.getElementsByClassName("nav_items")[0];
     items.style.top = "-50vh";
+    items.style.boxShadow = "none";
     navTrigger.removeEventListener("click", close_nav, true);
     navTrigger.addEventListener("click", open_nav, true);
+    setTimeout(() => {
+        navBar.removeAttribute("style");
+    }, 100);
 }
 
 function hide_img_with_animation () {
