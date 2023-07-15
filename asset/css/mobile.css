@@ -339,6 +339,11 @@ section h1, section img {
     margin-top:10px;
 }
 
+.contact-section img{
+    height: 2em;
+    width: 2em;
+}
+
 .credit-section {
     color: rgb(165, 165, 165);
     text-align: justify;

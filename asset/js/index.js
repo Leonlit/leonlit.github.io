@@ -15,6 +15,7 @@ window.onload = function () {
     window.addEventListener('scroll', handle_scrolled);
     generate_img_placement();
     start_gallery_timer();
+    set_copyright_year();
     add_position_handler_from_nav();
 }
 
@@ -23,6 +24,13 @@ const portfolio = document.getElementById("portfolio");
 const aboutShort = document.getElementById("about-short");
 const aboutLong = document.getElementById("about-long");
 const contact = document.getElementById("contact");
+
+function set_copyright_year () {
+    let yearContainer = document.getElementById("year");
+    const d = new Date();
+    let year = d.getFullYear();
+    yearContainer.innerText = year;
+}
 
 function handle_scrolled () {
     const userPosition = window.scrollY;
