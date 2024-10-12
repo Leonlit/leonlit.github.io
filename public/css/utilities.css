@@ -1,0 +1,31 @@
+@keyframes show_img {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes hide_img {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@font-face {
+    font-family: firacode;
+    src: url('../fonts/firacode/woff2/FiraCode-Regular.woff2') format('woff2'),
+        url('../fonts/firacode/woff/FiraCode-Regular.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: firacode-bold;
+    src: url('../fonts/firacode/woff2/FiraCode-Bold.woff2') format('woff2'),
+        url('../fonts/firacode/woff/FiraCode-Bold.woff') format('woff');
+    font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: firacode-medium;
+    src: url('../fonts/firacode/woff2/FiraCode-Medium.woff2') format('woff2'),
+        url('../fonts/firacode/woff/FiraCode-Medium.woff') format('woff');
+}

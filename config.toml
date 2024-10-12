@@ -1,0 +1,5 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Leon Lit'
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files

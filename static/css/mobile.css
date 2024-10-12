@@ -1,0 +1,72 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+    font-family: firacode;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10%;
+    margin-top: 10vh;
+}
+
+.header-big-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#h1_title {
+    font-family: firacode-bold;
+    font-size: 2rem;
+}
+
+.h1_label {
+    color: #AAAAAA;
+}
+
+.navbar {
+    font-family: firacode-bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between the left and right sides */
+    align-items: center; /* Vertically align items if necessary */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+} 
+
+.navbar .right-items a {
+    font-family: firacode-medium;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.navbar .right-items a:hover {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.left-items {
+    margin-right: 20px; /* Add space between left and right */
+}
+
+.right-items {
+    display: flex;
+    gap: 10px; /* Add spacing between the right items */
+}
