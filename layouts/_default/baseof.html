@@ -4,9 +4,9 @@
     {{- partial "head.html" . -}}
     <title>
         {{ if eq .Params.custom_title_enabled true }}
-            {{ .Params.custom_title_value }}
-                {{ else }}
-            {{ .Title }}
+            {{ .Params.custom_title_value }}  &ndash; {{ .Site.Title }}
+        {{ else }}
+            {{ .Title }} &ndash; {{ .Site.Title }}
         {{ end }}
     </title>
     </head>

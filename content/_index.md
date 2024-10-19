@@ -1,5 +1,5 @@
 ---
-title: "Leon Lit - Home"
+title: "Home"
 ---
 # Leon Lit
 <p class="h1_label">A Pentester, Developer, Homelaber & CTF player</p>

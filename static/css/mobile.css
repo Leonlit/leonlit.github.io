@@ -1,12 +1,43 @@
 @font-face {
     font-family: myFirstFont;
     src: url(sansation_light.woff);
-}
+}   
 
 body {
     background-color: #222831;
     color: #EEEEEE;
     font-family: firacode;
+}
+
+h1,h2,h3,h4 {
+    font-family: firacode-bold;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #00ADB5;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+
+}
+
+a:hover {
+    border-bottom: 1px solid #00ADB5;
+}
+
+.blog-listing-title {
+    font-size: 1.2em;
+    margin: 5px;
+
+}
+
+.post-content {
+    font-size: 1.2em;
+}
+
+.title-underlined {
+    border-bottom: 1px solid #EEEEEE;
 }
 
 #content {
