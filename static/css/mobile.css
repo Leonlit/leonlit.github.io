@@ -33,11 +33,15 @@ a:hover {
 }
 
 .post-content {
-    font-size: 1.2em;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    line-height: 2.0;
 }
 
 .title-underlined {
     border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 50px;
+    width: fit-content;
 }
 
 #content {

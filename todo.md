@@ -1,0 +1,3 @@
+- Do footer
+- project widget
+- HTML semantic elements
