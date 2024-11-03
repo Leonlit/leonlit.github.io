@@ -1,3 +1,4 @@
 - Do footer
 - project widget
 - HTML semantic elements
+- pagination on the posts

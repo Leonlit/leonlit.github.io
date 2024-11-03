@@ -9,6 +9,16 @@ body {
     font-family: firacode;
 }
 
+#site-title {
+    align-self: center;
+}
+
+.h1_label {
+    color: #AAAAAA;
+    align-self: center;
+    text-align: center;
+}
+
 h1,h2,h3,h4 {
     font-family: firacode-bold;
     text-decoration: none;
@@ -38,8 +48,21 @@ a:hover {
     line-height: 2.0;
 }
 
+.post-content p{
+    margin-top: 20px;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
 .title-underlined {
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 2px solid #EEEEEE;
     margin-bottom: 50px;
     width: fit-content;
 }
@@ -61,10 +84,6 @@ a:hover {
 #h1_title {
     font-family: firacode-bold;
     font-size: 2rem;
-}
-
-.h1_label {
-    color: #AAAAAA;
 }
 
 .navbar {

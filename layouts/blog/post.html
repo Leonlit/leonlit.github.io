@@ -1,8 +1,10 @@
 {{ define "main" }}
-  <div class="blog-content">
-    <h1 class="title-underlined">{{ .Title }}</h1>
-    <div class="post-content">
-    {{ .Content }}
-    </div>
-</div>
+	<main class="blog-content">
+		<article>
+			<h1 class="title-underlined">{{ .Title }}</h1>
+			<div>Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</div>
+			<div class="post-content">
+				{{ .Content }}
+		</article>
+	</main>
 {{ end }}
