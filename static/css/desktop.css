@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1024px) {
-    .blog-content {
+    .main-content {
         width: 50%;
     }
 
@@ -11,5 +11,10 @@
         color: #AAAAAA;
         align-self: flex-start;
         text-align: left;
+    }
+
+    .title-container {
+        text-align: left;
+        margin-bottom: clamp(50px, 5%, 100px);
     }
 }

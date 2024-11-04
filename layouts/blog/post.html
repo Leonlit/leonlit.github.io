@@ -1,8 +1,13 @@
 {{ define "main" }}
-	<main class="blog-content">
+	<main class="main-content">
 		<article>
-			<h1 class="title-underlined">{{ .Title }}</h1>
-			<div>Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</div>
+			<div class="title-container">
+				<h1 class="post-title-underlined">{{ .Title }}</h1>
+				<p class="h1_label">Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</p>
+				{{ if .Params.modifiedDate }}
+					<p class="h1_label">Modified on: {{ .Params.modifiedDate }}</p>
+				{{ end }}
+			</div>
 			<div class="post-content">
 				{{ .Content }}
 		</article>

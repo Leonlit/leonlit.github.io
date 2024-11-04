@@ -39,12 +39,20 @@ a:hover {
 .blog-listing-title {
     font-size: 1.2em;
     margin: 5px;
+}
 
+.main-content {
+    font-family: Verdana, sans-serif;
+    line-height: 2.0;
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: clamp(50px, 10%, 100px);
 }
 
 .post-content {
     font-size: 14px;
-    font-family: Verdana, sans-serif;
     line-height: 2.0;
 }
 
@@ -61,10 +69,10 @@ a:hover {
     margin-top: 50px;
 }
 
-.title-underlined {
+.post-title-underlined {
     border-bottom: 2px solid #EEEEEE;
-    margin-bottom: 50px;
-    width: fit-content;
+    margin: auto;
+    display: inline-block;
 }
 
 #content {
@@ -73,7 +81,7 @@ a:hover {
     align-items: flex-start;
     justify-content: space-around;
     margin: 10%;
-    margin-top: 10vh;
+    margin-top: clamp(50px, 10%, 100px);
 }
 
 .header-big-text {
