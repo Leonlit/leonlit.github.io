@@ -1,7 +1,32 @@
 {{ define "main" }}
-  <h2>Blog Posts</h2>
-  {{ range .Pages }}
-      <div class="blog-listing-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-  {{ end }}
-{{ end }}
+	<main class="list-content">
+		<h2>Blog Posts</h2>
 
+		{{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+
+		<div class="blog-list">
+			{{ range $paginator.Pages }}
+			<div class="blog-listing-title">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</div>
+			{{ end }}
+		</div>
+
+		<!-- Pagination Controls -->
+		<nav class="pagination">
+			{{ if $paginator.HasPrev }}
+			<a href="{{ $paginator.Prev.URL }}">Previous</a>
+			{{ end }}
+
+			{{ range $paginator.Pagers }}
+			<a href="{{ .URL }}" {{ if eq .PageNumber $paginator.PageNumber }}class="active" {{ end }}>
+				{{ .PageNumber }}
+			</a>
+			{{ end }}
+
+			{{ if $paginator.HasNext }}
+			<a href="{{ $paginator.Next.URL }}">Next</a>
+			{{ end }}
+		</nav>
+	</main>
+{{ end }}

@@ -7,8 +7,10 @@
         padding: 10px;
     }
 
-    .main-content {
+    .main-content,
+    .list-content {
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
     }
 }
