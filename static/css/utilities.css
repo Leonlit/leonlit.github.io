@@ -29,3 +29,18 @@
     src: url('../fonts/firacode/woff2/FiraCode-Medium.woff2') format('woff2'),
         url('../fonts/firacode/woff/FiraCode-Medium.woff') format('woff');
 }
+
+.older-pagination:after {
+    content: "\21A6";
+    margin-left: 6px;
+}
+
+.newer-pagination:before {
+    content: "\21A4";
+    margin-right: 6px;
+}
+
+.list-home-pagination:before {
+    content: "\2302";
+    margin-right: 6px;
+}

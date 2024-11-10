@@ -1,7 +1,26 @@
 {{ define "main" }}
-  <h2>Projects</h2>
-  {{ range .Pages }}
-      <div class="blog-listing-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-  {{ end }}
-{{ end }}
+	<main class="list-content">
+		<h2>Projects</h2>
 
+		{{ $paginator := .Paginate (where .Pages "Type" "projects") }}
+
+		<div class="project-list">
+			{{ range $paginator.Pages }}
+			<div class="project-listing-title">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</div>
+			{{ end }}
+		</div>
+
+		<!-- Pagination Controls -->
+		<nav class="pagination">
+			{{ if $paginator.HasPrev }}
+			<a href="{{ $paginator.Prev.URL }}" class="newer-pagination">Newer</a>
+			{{ end }}
+
+			{{ if $paginator.HasNext }}
+			<a href="{{ $paginator.Next.URL }}" class="older-pagination">Older</a>
+			{{ end }}
+		</nav>
+	</main>
+{{ end }}

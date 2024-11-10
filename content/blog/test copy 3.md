@@ -1,7 +1,7 @@
 ---
 date: '2024-10-12T10:36:13+08:00'
 draft: false
-title: 'The Curious Cat'
+title: 'The Curious Cat 4'
 layout: 'post'
 ---
 

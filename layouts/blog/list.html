@@ -15,17 +15,11 @@
 		<!-- Pagination Controls -->
 		<nav class="pagination">
 			{{ if $paginator.HasPrev }}
-			<a href="{{ $paginator.Prev.URL }}">Previous</a>
-			{{ end }}
-
-			{{ range $paginator.Pagers }}
-			<a href="{{ .URL }}" {{ if eq .PageNumber $paginator.PageNumber }}class="active" {{ end }}>
-				{{ .PageNumber }}
-			</a>
+			<a href="{{ $paginator.Prev.URL }}" class="newer-pagination">Newer</a>
 			{{ end }}
 
 			{{ if $paginator.HasNext }}
-			<a href="{{ $paginator.Next.URL }}">Next</a>
+			<a href="{{ $paginator.Next.URL }}" class="older-pagination">Older</a>
 			{{ end }}
 		</nav>
 	</main>

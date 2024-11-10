@@ -36,9 +36,22 @@ a:hover {
     border-bottom: 1px solid #00ADB5;
 }
 
-.blog-listing-title {
+.blog-listing-title,
+.project-listing-title {
     font-size: 1.2em;
     margin: 5px;
+}
+
+.blog-listing-title:before {
+    content: "\1F5CE";
+    font-size: 1.3em;
+    margin-right: 6px;
+}
+
+.project-listing-title:before {
+    content: "\2692";
+    font-size: 1.3em;
+    margin-right: 6px;
 }
 
 .main-content {
@@ -57,7 +70,7 @@ a:hover {
 
 .post-content {
     font-size: 14px;
-    line-height: 2.0;
+    line-height: 1.5;
 }
 
 .post-content p{
@@ -139,4 +152,10 @@ a:hover {
 
 .pagination {
     margin-top: 10vh;
+}
+
+.pagination a {
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: firacode-medium;
 }
