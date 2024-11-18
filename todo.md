@@ -1,7 +1,6 @@
-- [ ] Do footer
-- [ ] project widget
+- [ ] Do social media links
 - [x] HTML semantic elements
 - [x] pagination on the posts
 - [ ] projects page template
 - [ ] ability to link thumbnail
-- [ ] tags system
+- [ ] TOC of blog

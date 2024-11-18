@@ -43,7 +43,7 @@ a:hover {
 }
 
 .blog-listing-title:before {
-    content: "\1F5CE";
+    content: "\221F";
     font-size: 1.3em;
     margin-right: 6px;
 }
@@ -99,6 +99,7 @@ a:hover {
     justify-content: space-around;
     margin: 10%;
     margin-top: clamp(50px, 10%, 100px);
+    margin-bottom: 0;
 }
 
 .header-big-text {
@@ -117,12 +118,6 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between; /* Space between the left and right sides */
-    align-items: center; /* Vertically align items if necessary */
 }
 
 .navbar a {
@@ -151,11 +146,23 @@ a:hover {
 }
 
 .pagination {
-    margin-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination a {
     margin-right: 10px;
     font-weight: bold;
     font-family: firacode-medium;
+}
+
+.socialMedia {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    bottom: 0;
 }
