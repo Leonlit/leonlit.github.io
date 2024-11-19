@@ -1,9 +1,0 @@
-@media only screen and (min-width: 500px) {
-    .navbar {
-        justify-content: center;
-    }
-
-    .navbar a {
-        padding: 10px;
-    } 
-}
