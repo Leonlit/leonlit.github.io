@@ -6,3 +6,7 @@ title = 'Leon Lit'
 
 [pagination]
 pagelimit = 10
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 4

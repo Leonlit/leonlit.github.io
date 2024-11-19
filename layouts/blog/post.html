@@ -1,13 +1,13 @@
 {{ define "main" }}
 	<main class="main-content">
 		<article>
+			{{- partial "thumbnail.html" . -}}
 			<div class="title-container">
 				<h1 class="post-title-underlined">{{ .Title }}</h1>
-				<p class="h1_label">Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</p>
-				{{ if .Params.modifiedDate }}
-					<p class="h1_label">Modified on: {{ .Params.modifiedDate }}</p>
-				{{ end }}
+				{{- partial "postDate.html" . -}}
 			</div>
+			{{- partial "toc.html" . -}}
+
 			<div class="post-content">
 				{{ .Content }}
 			</div>

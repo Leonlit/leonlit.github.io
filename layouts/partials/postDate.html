@@ -1,0 +1,4 @@
+<p class="h1_label">Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</p>
+{{ if .Params.modifiedDate }}
+    <p class="h1_label">Modified on: {{ .Params.modifiedDate }}</p>
+{{ end }}

@@ -2,7 +2,7 @@
 	<main class="list-content">
 		<h2>Blog Posts</h2>
 
-		{{ $paginator := .Paginate (where .Pages "Type" "blog") }}
+		{{ $paginator := .Paginate (where .Pages "Params.layout" "post") }}
 
 		<div class="blog-list">
 			{{ range $paginator.Pages }}

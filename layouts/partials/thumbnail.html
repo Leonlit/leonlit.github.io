@@ -1,0 +1,8 @@
+{{ $thumbnail := .Params.thumbnail }}
+{{ if $thumbnail }}
+    {{ $image := .Resources.GetMatch $thumbnail }}
+    {{ if $image }}
+        {{ $resized := $image.Fit "800x500" }}
+        <img class="thumbnail" src="{{ $resized.RelPermalink }}" alt="{{ .Title }}"><br>
+    {{ end }}
+{{ end }}

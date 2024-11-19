@@ -1,0 +1,28 @@
+<details>
+    <summary>Links</summary>
+    <ul class="project-links">
+        {{ with .Params.github }}
+            <li class="youtube-link">
+                <a href="https://www.youtube.com/watch?v={{ . }}" target="_blank" rel="noopener noreferrer">
+                    Demo Video
+                </a>
+            </li>
+        {{ end }}
+
+        {{ with .Params.github }}
+            <li class="github-link">
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                    View Source Code on GitHub
+                </a>
+            </li>
+        {{ end }}
+
+        {{ with .Params.demo }}
+            <li class="demo-link">
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                    View Demo
+                </a>
+            </li>
+        {{ end }}
+    </ul>
+</details>

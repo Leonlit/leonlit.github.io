@@ -1,6 +1,6 @@
-- [ ] Do social media links
+- [x] Do social media links
 - [x] HTML semantic elements
 - [x] pagination on the posts
-- [ ] projects page template
-- [ ] ability to link thumbnail
-- [ ] TOC of blog
+- [x] projects page template
+- [x] ability to link thumbnail
+- [x] TOC of blog & project

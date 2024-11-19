@@ -2,6 +2,7 @@
     .main-content,
     .list-content {
         width: 50%;
+        max-width: 750px;
     }
 
     #site-title {
