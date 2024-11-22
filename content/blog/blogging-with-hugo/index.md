@@ -1,5 +1,5 @@
 ---
-date: '2024-11-19T20:46:00+08:00'
+date: '2024-11-17T20:46:00+08:00'
 draft: false
 title: 'Blogging with Hugo'
 layout: "post"
