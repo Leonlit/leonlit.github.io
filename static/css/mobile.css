@@ -96,7 +96,7 @@ p {
 .blog-listing-title:before,
 .project-listing-title:before {
     font-size: 1.3em;
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 .blog-listing-title:before {
