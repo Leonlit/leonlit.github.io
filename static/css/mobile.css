@@ -1,25 +1,12 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-}   
-
+/* General Styling */
 body {
     background-color: #222831;
     color: #EEEEEE;
-    font-family: firacode;
+    font-family: firacode, sans-serif;
 }
 
-#site-title {
-    align-self: center;
-}
-
-.h1_label {
-    color: #AAAAAA;
-    align-self: center;
-    text-align: center;
-}
-
-h1,h2,h3,h4 {
+/* Typography */
+h1, h2, h3, h4 {
     font-family: firacode-bold;
     text-decoration: none;
 }
@@ -27,33 +14,30 @@ h1,h2,h3,h4 {
 a {
     text-decoration: none;
     color: #00ADB5;
-    transition: 0.3s;
+    transition: border-bottom 0.3s;
     border-bottom: 1px solid transparent;
-
 }
 
 a:hover {
     border-bottom: 1px solid #00ADB5;
 }
 
-.blog-listing-title,
-.project-listing-title {
-    font-size: 1.2em;
-    margin: 5px;
+p {
+    margin-top: 20px;
 }
 
-.blog-listing-title:before {
-    content: "\221F";
-    font-size: 1.3em;
-    margin-right: 6px;
+/* Titles */
+#site-title,
+.h1_label {
+    align-self: center;
+    text-align: center;
 }
 
-.project-listing-title:before {
-    content: "\2692";
-    font-size: 1.3em;
-    margin-right: 6px;
+.h1_label {
+    color: #AAAAAA;
 }
 
+/* Content */
 .main-content {
     font-family: Verdana, sans-serif;
     line-height: 2.0;
@@ -63,23 +47,9 @@ a:hover {
     line-height: 1.8;
 }
 
-.title-container {
-    text-align: center;
-    margin-bottom: clamp(50px, 10%, 100px);
-}
-
-.toc hr {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-}
-
 .post-content {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-}
-
-.post-content p{
-    margin-top: 20px;
 }
 
 .post-content h1,
@@ -87,7 +57,6 @@ a:hover {
 .post-content h3,
 .post-content h4 {
     font-family: Verdana, sans-serif;
-    text-decoration: none;
     margin-top: 50px;
 }
 
@@ -97,6 +66,7 @@ a:hover {
     display: inline-block;
 }
 
+/* Layout */
 #content {
     display: flex;
     flex-direction: column;
@@ -107,16 +77,37 @@ a:hover {
     margin-bottom: 0;
 }
 
-.header-big-text {
+.title-container {
+    text-align: center;
+    margin-bottom: clamp(50px, 10%, 100px);
+}
+
+.toc hr {
+    margin: 5vh 0;
+}
+
+/* Blog and Project Listings */
+.blog-listing-title,
+.project-listing-title {
     font-size: 1.2em;
-    font-weight: bold;
+    margin: 5px;
 }
 
-#h1_title {
-    font-family: firacode-bold;
-    font-size: 2rem;
+.blog-listing-title:before,
+.project-listing-title:before {
+    font-size: 1.3em;
+    margin-right: 6px;
 }
 
+.blog-listing-title:before {
+    content: "\221F";
+}
+
+.project-listing-title:before {
+    content: "\2692";
+}
+
+/* Navigation Bar */
 .navbar {
     font-family: firacode-bold;
     display: flex;
@@ -129,12 +120,12 @@ a:hover {
     text-decoration: none;
     color: inherit;
     padding: 5px;
-} 
+}
 
 .navbar .right-items a {
     font-family: firacode-medium;
     border-bottom: 1px solid transparent;
-    transition: 0.3s;
+    transition: border-bottom 0.3s;
 }
 
 .navbar .right-items a:hover {
@@ -142,38 +133,46 @@ a:hover {
 }
 
 .left-items {
-    margin-right: 20px; /* Add space between left and right */
+    margin-right: 20px;
 }
 
 .right-items {
     display: flex;
-    gap: 10px; /* Add spacing between the right items */
+    gap: 10px;
 }
 
+/* Miscellaneous */
 .pagination {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin: 10vh 0 5vh;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
 .pagination a {
-    margin-right: 10px;
     font-weight: bold;
     font-family: firacode-medium;
 }
 
 .socialMedia {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    justify-content: center;
+    margin: 10vh 0;
     display: flex;
     gap: 20px;
-    bottom: 0;
+    justify-content: center;
 }
 
 .thumbnail {
-    display: block; 
+    display: block;
     margin: 0 auto;
+}
+
+/* Specific Elements */
+.header-big-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#h1_title {
+    font-family: firacode-bold;
+    font-size: 2rem;
 }
