@@ -1,4 +1,6 @@
-<p class="h1_label">Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</p>
-{{ if .Params.modifiedDate }}
-    <p class="h1_label">Modified on: {{ .Params.modifiedDate | dateFormat "Jan 2, 2006" }}</p>
-{{ end }}
+<div class="post-date-container">
+    <p class="post-date-label">Posted on {{ .Date | dateFormat "Jan 2, 2006" }}</p>
+    {{ if .Params.modifiedDate }}
+        <p class="post-date-label">Modified on {{ .Params.modifiedDate | dateFormat "Jan 2, 2006" }}</p>
+    {{ end }}
+</div>

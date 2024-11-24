@@ -27,13 +27,22 @@ p {
 }
 
 /* Titles */
-#site-title,
-.h1_label {
+#site-title {
     align-self: center;
     text-align: center;
 }
 
-.h1_label {
+.post-date-container {
+    margin-bottom: 5vh;
+}
+
+.post-date-label {
+    line-height: 0;
+    font-size: 14px;
+}
+
+.h1_label,
+.post-date-label {
     color: #AAAAAA;
 }
 
@@ -154,8 +163,8 @@ p {
     font-family: firacode-medium;
 }
 
-.socialMedia {
-    margin: 10vh 0;
+.social-media {
+    margin: 5vh 0;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -170,9 +179,4 @@ p {
 .header-big-text {
     font-size: 1.2em;
     font-weight: bold;
-}
-
-#h1_title {
-    font-family: firacode-bold;
-    font-size: 2rem;
 }

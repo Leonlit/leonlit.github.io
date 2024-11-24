@@ -30,7 +30,7 @@ Looking into Hugo's documentation, it has all the features I need for the new bl
 
 And many more.
 
-I decided not to use an existing template, mostly because I wanted to learn how the content is structured in Hugo. The contents will be separated into blog posts and projects. Regular blog posts will be published in the blog section, while the documentation/writeup of my new/old projects will go into the projects section. 
+I decided not to use an existing template, mostly because I wanted to learn how the content is structured in Hugo. The contents will be separated into blog posts and projects. Regular blog posts will be published in the blog section, while the writeup of my projects will go into the projects section. 
 
 This time I decided not to complicate things and keep everything as minimal as possible. A table of contents was added to let readers skip some sections in case I publish a long post with multiple chapters or sections in the future. I also added pagination below the content so readers can read new or older posts. 
 
