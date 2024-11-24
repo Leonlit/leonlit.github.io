@@ -4,3 +4,8 @@
 - [x] projects page template
 - [x] ability to link thumbnail
 - [x] TOC of blog & project
+- [ ] categories/tags
+- [ ] CTF Writeups section
+- [ ] Project list show thumbnails
+- [ ] Blog list show time
+- [ ] Sort blog by year
