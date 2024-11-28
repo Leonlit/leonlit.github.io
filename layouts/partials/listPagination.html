@@ -1,0 +1,9 @@
+<nav class="pagination">
+    {{ if .paginator.HasPrev }}
+    <a href="{{ .paginator.Prev.URL }}" class="newer-pagination">Newer</a>
+    {{ end }}
+
+    {{ if .paginator.HasNext }}
+    <a href="{{ .paginator.Next.URL }}" class="older-pagination">Older</a>
+    {{ end }}
+</nav>

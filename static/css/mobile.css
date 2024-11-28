@@ -27,7 +27,8 @@ p {
 }
 
 /* Titles */
-#site-title {
+#site-title,
+.footer-nav {
     align-self: center;
     text-align: center;
 }
@@ -97,13 +98,15 @@ p {
 
 /* Blog and Project Listings */
 .blog-listing-title,
-.project-listing-title {
+.project-listing-title,
+.general-listing-title {
     font-size: 1.2em;
     margin: 5px;
 }
 
 .blog-listing-title:before,
-.project-listing-title:before {
+.project-listing-title:before, 
+.general-listing-title:before {
     font-size: 1.3em;
     margin-right: 10px;
 }
@@ -114,6 +117,10 @@ p {
 
 .project-listing-title:before {
     content: "\2692";
+}
+
+.general-listing-title:before {
+    content: "\2014";
 }
 
 /* Navigation Bar */
@@ -179,4 +186,12 @@ p {
 .header-big-text {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.tags {
+    margin-top: 10vh;
+}
+
+.footer-nav {
+    margin-top: 10vh;
 }

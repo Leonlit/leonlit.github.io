@@ -13,14 +13,6 @@
 		</div>
 
 		<!-- Pagination Controls -->
-		<nav class="pagination">
-			{{ if $paginator.HasPrev }}
-			<a href="{{ $paginator.Prev.URL }}" class="newer-pagination">Newer</a>
-			{{ end }}
-
-			{{ if $paginator.HasNext }}
-			<a href="{{ $paginator.Next.URL }}" class="older-pagination">Older</a>
-			{{ end }}
-		</nav>
+		{{- partial "listPagination.html" (dict "paginator" $paginator "context" .) -}}
 	</main>
 {{ end }}

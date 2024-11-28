@@ -1,0 +1,14 @@
+<p class="tags"><b>Tags</b>:
+{{ if .Params.tags }}
+    {{ range .Params.tags }}
+      <span><a href="/tags/{{ . | urlize }}">#{{ . }}</a></span>
+    {{ end }}
+{{ end }}
+<br/>
+<b>Categories</b>:
+    {{ if .Params.categories }}
+        {{ range .Params.categories }}
+          <span><a href="/categories/{{ . | urlize }}">#{{ . }}</a></span>
+        {{ end }}
+    {{ end }}
+</p>
