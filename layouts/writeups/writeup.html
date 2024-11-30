@@ -1,0 +1,29 @@
+{{ define "main" }}
+	<main class="main-content">
+		<article>
+			{{- partial "thumbnail.html" . -}}
+			<div class="title-container">
+				<h1 class="post-title-underlined">{{ .Title }}</h1>
+			</div>
+			{{- partial "postDate.html" . -}}
+			{{- partial "writeupsLink.html" . -}}
+			{{- partial "toc.html" . -}}
+
+			<div class="post-content">
+				{{ .Content }}
+			</div>
+			{{- partial "contentTags.html" . -}}
+			<nav class="pagination">
+				{{ with .NextInSection }}
+				<a href="{{ .RelPermalink }}" class="newer-pagination">Newer</a>
+				{{ end }}
+
+				<a href="/blog/" >Index</a>
+
+				{{ with .PrevInSection }}
+				<a href="{{ .RelPermalink }}" class="older-pagination">Older</a>
+				{{ end }}
+			</nav>
+		</article>
+	</main>
+{{ end }}

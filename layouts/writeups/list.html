@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<main class="list-content">
+		<h2>Writeup Posts</h2>
+
+		{{ $paginator := .Paginate (where .Pages "Params.layout" "writeup") }}
+
+		<div class="blog-list">
+			{{ range $paginator.Pages }}
+			<div class="flag-listing-title">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</div>
+			{{ end }}
+		</div>
+
+		<!-- Pagination Controls -->
+		{{- partial "listPagination.html" (dict "paginator" $paginator "context" .) -}}
+	</main>
+{{ end }}

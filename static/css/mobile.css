@@ -99,14 +99,16 @@ p {
 /* Blog and Project Listings */
 .blog-listing-title,
 .project-listing-title,
-.general-listing-title {
+.general-listing-title,
+.flag-listing-title {
     font-size: 1.2em;
     margin: 5px;
 }
 
 .blog-listing-title:before,
 .project-listing-title:before, 
-.general-listing-title:before {
+.general-listing-title:before,
+.flag-listing-title:before {
     font-size: 1.3em;
     margin-right: 10px;
 }
@@ -121,6 +123,10 @@ p {
 
 .general-listing-title:before {
     content: "\2014";
+}
+
+.flag-listing-title:before {
+    content: "\2690";
 }
 
 /* Navigation Bar */

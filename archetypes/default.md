@@ -8,8 +8,8 @@ external_Links: false
 youtube: ""
 github: ""
 demo: ""
-tags: 
-    - 
-categories: 
-    -
+tags: []
+categories: []
+writeupLink: false
+CTFLink: ""
 ---

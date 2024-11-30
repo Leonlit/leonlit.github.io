@@ -1,27 +1,19 @@
-{{ if eq .Params.external_Links true }}
+{{ if eq .Params.writeupLink true }}
 <details>
     <summary>Links</summary>
     <ul class="project-links">
         {{ with .Params.youtube }}
             <li class="youtube-link">
                 <a href="https://www.youtube.com/watch?v={{ . }}" target="_blank" rel="noopener noreferrer">
-                    Demo Video
+                    Walkthrough Video
                 </a>
             </li>
         {{ end }}
 
-        {{ with .Params.github }}
-            <li class="github-link">
-                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-                    View Source Code on GitHub
-                </a>
-            </li>
-        {{ end }}
-
-        {{ with .Params.demo }}
+        {{ with .Params.CTFLink }}
             <li class="demo-link">
                 <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-                    View Demo
+                    CTFLink
                 </a>
             </li>
         {{ end }}
