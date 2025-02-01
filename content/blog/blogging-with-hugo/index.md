@@ -11,6 +11,7 @@ github: ""
 demo: ""
 tags: ["Hugo", "Static Site Generator"]
 categories: ["Blogging", "Web Development"]
+years: ["2024"]
 ---
 
 It's been a while since I last wrote anything for my blog. Instead of updating what I have been doing for the past 1 year, I migrated my blog to Hugo.

@@ -1,0 +1,10 @@
+{{ define "main" }}
+	<main class="list-content">
+		<h2>Posts from {{ .Title }}</h2>
+		{{ range .Pages }}
+            <div class="general-listing-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </div>
+        {{ end }}
+	</main>
+{{ end }}

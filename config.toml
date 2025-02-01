@@ -14,3 +14,4 @@ pagelimit = 10
 [taxonomies]
   tag = "tags"
   category = "categories"
+  year = "years"
