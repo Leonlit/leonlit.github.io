@@ -1,0 +1,10 @@
+{{ if .Params.tech }}
+    <details>
+        <summary>Built with </summary>
+        <ul>
+            {{ range .Params.tech }}
+                <li>{{ . }}</li>
+            {{ end }}
+        </ul>
+    </details>
+{{ end }}
