@@ -36,7 +36,7 @@ Built with vanilla HTML, CSS, and JavaScript, keeping the frontend lightweight a
 
 ## Screenshots 
 
-This project is actively evolving, so the UI and APIs may change over time. For a complete history of updates and improvements, check out the [changelogs](changelogs/).
+This project is actively evolving, so the UI and APIs may change over time. For a complete history of updates and improvements, check out the [changelogs](/changelogs/music-viz/).
 
 ### Home Page
 <img src="images/home.png" alt="Home page">
