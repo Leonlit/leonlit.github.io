@@ -28,7 +28,7 @@ Built with vanilla HTML, CSS, and JavaScript, keeping the frontend lightweight a
 - Socket.IO for real time interactions
 - MinIO to store images & music
 - RabbitMQ to queue tasks to split music to different intruments
-- The susic are split using spleeter
+- The music are split using spleeter
 
 ### Development
 - Bash & python scripts for automation
