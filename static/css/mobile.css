@@ -100,7 +100,8 @@ p {
 .blog-listing-title,
 .project-listing-title,
 .general-listing-title,
-.flag-listing-title {
+.flag-listing-title,
+.changelog-listing-title {
     font-size: 1.2em;
     margin: 5px;
 }
@@ -108,7 +109,8 @@ p {
 .blog-listing-title:before,
 .project-listing-title:before, 
 .general-listing-title:before,
-.flag-listing-title:before {
+.flag-listing-title:before
+.changelog-listing-title:before {
     font-size: 1.3em;
     margin-right: 10px;
 }
@@ -127,6 +129,10 @@ p {
 
 .flag-listing-title:before {
     content: "\2690";
+}
+
+.changelog-listing-title:before {
+    content: "\1F4DD";
 }
 
 /* Navigation Bar */
@@ -200,4 +206,8 @@ p {
 
 .footer-nav {
     margin-top: 10vh;
+}
+
+img {
+    width:100%;
 }

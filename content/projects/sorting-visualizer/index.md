@@ -17,13 +17,13 @@ A visualization of sorting algorithm using HTML, CSS and Javascript
 ## Screenshots 
 
 ### Generate new Array
-<img src="generate_new_array.png" alt="Generate New Array" height="350px">
+<img src="generate_new_array.png" alt="Generate New Array">
 
 ### Sorting values
-<img src="sorting.png" alt="Sorting" height="350px">
+<img src="sorting.png" alt="Sorting">
 
 ### Sorting values in descending order
-<img src="sorting_descending.png" alt="Sorting Descending Order" height="350px">
+<img src="sorting_descending.png" alt="Sorting Descending Order">
 
 ### Finished sorting
-<img src="finished.png" alt="Finished" height="350px">
+<img src="finished.png" alt="Finished">

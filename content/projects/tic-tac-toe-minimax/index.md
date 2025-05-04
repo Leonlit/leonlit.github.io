@@ -17,7 +17,7 @@ A simple tic tac toe game which consists of a bot created using the Minimax algo
 ## Screenshots 
 
 ### Main Menu
-<img src="main_menu.png" alt="Main Menu" height="350px">
+<img src="main_menu.png" alt="Main Menu">
 
 ### In-game Image
-<img src="in_game.PNG" alt="In Game" height="350px">
+<img src="in_game.PNG" alt="In Game">

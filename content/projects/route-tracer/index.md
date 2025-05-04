@@ -24,16 +24,16 @@ Get the information of the node that our packet gone through when reaching to a 
 ## Screenshots 
 
 ### Main Page (desktop)
-<img src="main_page.png" alt="main page (desktop)" height="350px">
+<img src="main_page.png" alt="main page (desktop)">
 
 ### Tracing Google
-<img src="tracing_google.png" alt="Tracing Google" height="350px">
+<img src="tracing_google.png" alt="Tracing Google">
 
 ### Selecting a Vertice
-<img src="selecting_vertices.png" alt="Selecting a vertice on the map" height="350px">
+<img src="selecting_vertices.png" alt="Selecting a vertice on the map">
 
 ### Selecting a Edge
-<img src="selecting_edge.png" alt="Selecting a edge on the map" height="350px">
+<img src="selecting_edge.png" alt="Selecting a edge on the map">
 
 ### Mobile View
-<img src="mobile_view.png" alt="Viewing page in mobile mode" height="350px">
+<img src="mobile_view.png" alt="Viewing page in mobile mode">

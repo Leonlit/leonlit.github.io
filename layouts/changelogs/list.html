@@ -1,0 +1,13 @@
+{{ define "main" }}
+	<main class="list-content">
+		<h2>{{ .Title }}</h2>
+
+		<div class="changelog-list">
+			{{ range sort .Pages "Date" "desc" }}
+			<div class="changelog-listing-title">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</div>
+			{{ end }}
+		</div>
+	</main>
+{{ end }}

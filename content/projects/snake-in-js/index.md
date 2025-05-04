@@ -17,7 +17,7 @@ A snake game using pure JS, HTML, and CSS. The game is responsive and I've teste
 ## Screenshots 
 
 ### Main Menu
-<img src="main_menu.PNG" alt="Main Menu" height="350px">
+<img src="main_menu.PNG" alt="Main Menu">
 
 ### In-game imge
-<img src="in_game.png" alt="In Game" height="350px">
+<img src="in_game.png" alt="In Game">
