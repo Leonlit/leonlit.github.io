@@ -106,13 +106,12 @@ p {
     margin: 5px;
 }
 
-.blog-listing-title:before,
-.project-listing-title:before, 
-.general-listing-title:before,
-.flag-listing-title:before
-.changelog-listing-title:before {
-    font-size: 1.3em;
-    margin-right: 10px;
+.blog-listing-title > a,
+.project-listing-title > a, 
+.general-listing-title > a,
+.flag-listing-title > a
+.changelog-listing-title > a {
+    margin-left: 10px;
 }
 
 .blog-listing-title:before {
