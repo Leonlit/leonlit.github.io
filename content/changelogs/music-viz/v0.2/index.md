@@ -1,5 +1,5 @@
 ---
-title: "Music Viz - version 0.0.2"
+title: "Music Viz - version 0.2"
 date: '2025-08-31T05:55:26+08:00'
 modifiedDate: 
 type: "changelogs"
